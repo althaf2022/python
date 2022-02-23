@@ -2,11 +2,16 @@ pipeline {
   
  agent any 
   
+  tools {
+    maven 'mvn'
+    jdk 'jdk'
+  }
   stages {
   
     stage ('Build') {
       steps {
-        echo "build stage"
+        sh 'mvn clean'
+        sh 'mvn install'
        }
      }
    }
