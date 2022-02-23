@@ -6,16 +6,8 @@ pipeline {
   
     stage ('Build') {
       steps {
-        echo "build stage 
-      }
-    }
-  
-  
-  
-  
-  
-  
-  
-  
-  }
-  }
+        echo "build stage"
+       }
+     }
+   }
+}
